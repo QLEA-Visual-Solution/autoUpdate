@@ -3,9 +3,9 @@
 <br>ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー<br>
 
 ### 使用方法<br>
-「autoUpdate.js」を任意のページに設置。<br>
+1：「autoUpdate.js」を任意のページに設置。<br>
 
-更新日が入る箇所に下記のように、それぞれ情報更新日に「js-todayElm」、次回情報更新日（取引条件の有効期限）に「js-nextElm」のクラスを設定。
+2：更新日が入る箇所に下記のように、それぞれ情報更新日に「js-todayElm」、次回情報更新日（取引条件の有効期限）に「js-nextElm」のクラスを設定。
 ```bash=
 <p>情報更新日：<span class="js-todayElm"></span></p>
 <p>次回情報更新日：<span class="js-nextElm"></span></p>

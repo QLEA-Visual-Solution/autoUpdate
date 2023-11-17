@@ -7,8 +7,17 @@
 
 2：更新日が入る箇所に下記のように、それぞれ情報更新日に「js-todayElm」、次回情報更新日（取引条件の有効期限）に「js-nextElm」のクラスを設定。
 ```bash=
-<p>情報更新日：<span class="js-todayElm"></span></p>
-<p>次回情報更新日：<span class="js-nextElm"></span></p>
-<p>取引条件の有効期限：<span class="js-nextElm"></span></p>
+<p>情報更新日：<span class="js-todayElm" data-config=""></span></p>
+<p>次回情報更新日：<span class="js-nextElm" data-config=""></span></p>
+<p>取引条件の有効期限：<span class="js-disElm" data-config=""></span></p>
 ```
+
+3：案件によっては取引条件の有効期限などが、次回情報更新日とは1日ずらして載せてる場合があり、その場合は、データ属性を利用して操作することが可能です。
+
+```bash=
+data-config="数値"
+```
+入力する数値は正の数と負の数を設定することが可能です。<br>
+負の数のみ「-（マイナス）」をつけて記入することで、1日減らすことが可能です。
+
 これで自動更新のセットアップが完了です。以降更新日がアクセスするたびに更新されます。
